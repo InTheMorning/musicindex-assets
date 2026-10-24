@@ -22,6 +22,12 @@ no rule of its own.
   `scripts/check.py compare` does not find it.
 - The apps do not take their files from here yet. Each app changes when the
   operator starts that work in the app.
+- On 2026-10-24, 43 Lucide icons were added for the mockups of the research
+  repository. The mockups show the screens of the journeys, for example
+  settings, folders, upload, the inbox and the trash. The apps do not use
+  them yet. They come from the package `lucide-static` 1.43.0 of the npm
+  registry. As for the first 39 icons, the license comment and the class
+  attribute are removed.
 - No Lucide icon is changed yet. `icons/CHANGES.md` does not exist until the
   first change.
 

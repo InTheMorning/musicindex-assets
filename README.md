@@ -11,7 +11,7 @@ musicindex-studio and v4vmm.
 | --- | --- | --- |
 | `brand/` | The logo mark, the mark shape, the lockups, the favicons and the brand pack | All rights reserved (`LICENSE`) |
 | `fonts/figtree/` | Figtree: two `woff2` subsets for the web apps, four `ttf` weights for v4vmm | SIL Open Font License 1.1 (`fonts/figtree/OFL.txt`) |
-| `icons/lucide/` | The Lucide 1.43.0 icons that the apps use | ISC, and MIT for the icons from Feather (`icons/lucide/LICENSE-LUCIDE`) |
+| `icons/lucide/` | 82 Lucide 1.43.0 icons that the apps use, without changes | ISC, and MIT for the icons from Feather (`icons/lucide/LICENSE-LUCIDE`) |
 | `icons/custom/` | Icons that Lucide does not have: the RSS and Nostr badges | All rights reserved (`LICENSE`) |
 | `tokens/tokens.json` | The colors, the shapes, the font and the icon set of the apps | All rights reserved (`LICENSE`) |
 | `manifest.json` | The SHA-256 and the license of each file | All rights reserved (`LICENSE`) |

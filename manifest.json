@@ -120,6 +120,16 @@
       "bytes": 262,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/arrow-up-down.svg": {
+      "sha256": "d15411438095bac7cab0cf91f18cadfbde2ca752284c06b4b3642c4695b1774e",
+      "bytes": 313,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/audio-lines.svg": {
+      "sha256": "3942b8a5d6bccc927a55f857f0d44b90e2663470cd2d569000c9b60c37578dfa",
+      "bytes": 349,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/badge-check.svg": {
       "sha256": "a83b36e35ed35be896c5e5d39d0a63ba4368735ac22f09a26a31726259467775",
       "bytes": 417,
@@ -128,6 +138,16 @@
     "icons/lucide/ban.svg": {
       "sha256": "2eba67f86d70bbd5d22e4211d44d7dda86c3397410f714765a12c3cd3ca0ebe3",
       "bytes": 285,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/building-2.svg": {
+      "sha256": "e0d46029dac60bf48ecac4532d39e15772cf484e4d230a6b40aee98775ffae85",
+      "bytes": 441,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/calendar.svg": {
+      "sha256": "312ac8e715ac2b71bcc942dec2e8de9c1929085474f08885af35b563f6aa7a0b",
+      "bytes": 329,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/check.svg": {
@@ -155,6 +175,11 @@
       "bytes": 278,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/circle-dot.svg": {
+      "sha256": "c263f6a08a089c06ad40f408ad5da9100359ab52d379e6c571cd7c5bd74eaa87",
+      "bytes": 279,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/circle-x.svg": {
       "sha256": "bcd8788901e6f29e1b231a81ba5e707d083d06cb4848a28f29407fab4f8e0b64",
       "bytes": 293,
@@ -173,6 +198,11 @@
     "icons/lucide/cloud-download.svg": {
       "sha256": "c50569ad4c39d6ecf911debd62d37e805e610f71d696495d353be4cbf6bd8b1f",
       "bytes": 341,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/cloud-upload.svg": {
+      "sha256": "4cb6854172915c18500063301a19787d2facf7cc2d0a429e33dfdc9fb90c7d90",
+      "bytes": 333,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/compass.svg": {
@@ -200,9 +230,44 @@
       "bytes": 332,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/eye.svg": {
+      "sha256": "5bf90197dd7629cad64a2e48d1186a71559deb6121207d10e3dc5b19ebaffdcf",
+      "bytes": 360,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/file-audio.svg": {
+      "sha256": "6d5e579e3e3dd8b491a28faa4f6bb245680791bbc6f24a40751a493baac13892",
+      "bytes": 469,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/file-text.svg": {
+      "sha256": "52ca55846c202335fb870c8aa23e9345630ec10489303756d62e750f7109605c",
+      "bytes": 444,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/filter.svg": {
+      "sha256": "288f869330602e29a640099ffc5d6ac01caadad2ef6f8aac1138b8bf91ccd752",
+      "bytes": 370,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/folder-open.svg": {
+      "sha256": "ee57452b40e71df310214091dd9da1941a397c83197b8ff8d7ae66dd4242578b",
+      "bytes": 401,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/folder.svg": {
+      "sha256": "f0d92b94b797a8ab7d4c4ae33c3236c47f64068351b4e14bdb5014ee42898a39",
+      "bytes": 342,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/globe.svg": {
       "sha256": "82c6b8fa0b8e8d775ec9becd86f74a4e50bff7bee4c81f7362de45348504f14d",
       "bytes": 331,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/grid-2x2.svg": {
+      "sha256": "dc1896d3b22e88e0ba45a77bc8e947b7a01d0c9fb5ff77d07d24a5589816bb84",
+      "bytes": 309,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/grip-vertical.svg": {
@@ -210,9 +275,34 @@
       "bytes": 413,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/hard-drive.svg": {
+      "sha256": "324363c40f54e4ca843de0ad1d023b063b70a26a83bb2e0a9e9f4aad9af37378",
+      "bytes": 459,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/headphones.svg": {
+      "sha256": "7719585dafa921805aefc21fc3262bbcc621507610a653b84e1632236650b35a",
+      "bytes": 347,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/hourglass.svg": {
       "sha256": "76475d4ca3299fa243ef83de602b78621487daad45ca54fea2e3718bfba5ef2c",
       "bytes": 432,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/house.svg": {
+      "sha256": "28216c479005731ef5e382e7d8627eda2b129b019eb1f3d9de9f5915576d448e",
+      "bytes": 383,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/image.svg": {
+      "sha256": "619c9db58c879dce6250376ba67d9c9102ca6dbb3b1efb9294c9f180e22273a5",
+      "bytes": 358,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/inbox.svg": {
+      "sha256": "1838482c53d0846badef9be96fdcf7a167064241bd4891efa995c77ebec5f187",
+      "bytes": 388,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/info.svg": {
@@ -220,9 +310,29 @@
       "bytes": 294,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/key-round.svg": {
+      "sha256": "f8cdea843754ed360e36b04bf6aa2c2b3610935dd39ffc685a36c4d0a05be248",
+      "bytes": 453,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/library.svg": {
+      "sha256": "892ba1bd1ee2e5bba320eea1c30c83ed83055ded5a0a0c0e7e4ee5fb06c307a5",
+      "bytes": 304,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/link.svg": {
+      "sha256": "4f3237183dcaabfac92f4e94c776a9a9e45c3c5e77a921061a6b34b61eb5413f",
+      "bytes": 359,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/list-music.svg": {
       "sha256": "e86c9d93aab1828013afca1ecc679f9eea432881ea373f97064801b5768d2580",
       "bytes": 338,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/list.svg": {
+      "sha256": "ff97a7379eb962ddc3863bb59f0f45875ac8da91aac8a38a67361e7118d2d627",
+      "bytes": 353,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/loader-circle.svg": {
@@ -230,9 +340,19 @@
       "bytes": 251,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/lock.svg": {
+      "sha256": "d2cfe60cac8deaef36442b5c8218c1e61abe18222784b2a370ea090d13fca840",
+      "bytes": 309,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/menu.svg": {
       "sha256": "af6491988ac1ba30dc5414f485bc48713e957e1edb0fbef4a0dd8691c3c21598",
       "bytes": 279,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/mic.svg": {
+      "sha256": "9b940cd735d1ffa270ba670c4e677d9a09400f3fa81d6b3f405b12a3b67a59a8",
+      "bytes": 326,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/minus.svg": {
@@ -250,9 +370,24 @@
       "bytes": 308,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/panel-left.svg": {
+      "sha256": "029f67b9e3eeb7ddf7c7c499b174c50388725e8ea50d4ea59ed7dbaf8d61cb82",
+      "bytes": 284,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/panel-right.svg": {
+      "sha256": "327d197328f9feb1f88c36c9db04e9b00fe717d877459f92fcd892f5e4c349fa",
+      "bytes": 285,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/pause.svg": {
       "sha256": "f122ec4ea7f5693a0b1baafa9c708b53980dc87b4aacb297c6e6f71c1a4c115c",
       "bytes": 313,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/pencil.svg": {
+      "sha256": "7e1ca7a6f5c1eb949671df762f2baadd32f5bd841d43153c3a15279af7d78d0c",
+      "bytes": 377,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/play.svg": {
@@ -265,6 +400,21 @@
       "bytes": 256,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/radio.svg": {
+      "sha256": "e55ef723902350caaabb68c8814ba57c4c2d237e0747a5f0520624e6f2f8c861",
+      "bytes": 437,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/refresh-cw.svg": {
+      "sha256": "2e10dd403c85a24f163d59fc6151aa21147fe9402e1305dfc8979208caee8944",
+      "bytes": 392,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/save.svg": {
+      "sha256": "ee9d56a7fec4b20dd6689546d41f68219ea8cbd67f99bd17a1bdaff5be6edb53",
+      "bytes": 417,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/scan-search.svg": {
       "sha256": "a2919e740bb122bb737542119c1d3c1042bcd62c79d702804553cc95ac768e1e",
       "bytes": 431,
@@ -273,6 +423,21 @@
     "icons/lucide/search.svg": {
       "sha256": "283d371c2e433817bb9c0c8310caa6c77fa4177c0f4f1168d9c83b97af7389dc",
       "bytes": 275,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/settings.svg": {
+      "sha256": "0ae27fd0f81999229e3127ac96c5b32edfea448e291d509e76212b917551d66b",
+      "bytes": 586,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/share-2.svg": {
+      "sha256": "de283acf45610a564ade56bc55bb94e7cf4040bc942efe9163fd98cdfe07672c",
+      "bytes": 418,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/shield-check.svg": {
+      "sha256": "8d4fcdbde5bba4abb1a2f6fe53e37ceb6343a1d5449a9d88f6f97c1971d26c4e",
+      "bytes": 415,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/skip-back.svg": {
@@ -285,9 +450,19 @@
       "bytes": 333,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/sliders-horizontal.svg": {
+      "sha256": "e43a00e5eb684e6cbb61083bed2528d7a3fa5f265693eb2b5f314cd432aa65f4",
+      "bytes": 422,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/square.svg": {
       "sha256": "bd979354f0ab184b95cecf03eedefe40c2dc65830ac6d7e60017b2b25a354acb",
       "bytes": 261,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/star.svg": {
+      "sha256": "c59da86b889569387db28e69ad00a89f96af22863ad9eea9aa12c4876a14338c",
+      "bytes": 588,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/sun.svg": {
@@ -295,9 +470,34 @@
       "bytes": 485,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/tag.svg": {
+      "sha256": "85e11c07b29f5b67410e0f14c84799d9406320cd4575b7c8322f31910e0582cc",
+      "bytes": 430,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/trash-2.svg": {
+      "sha256": "27299f69ad7c6272be64b1b8e2d48cbd6dcf0ef0d4f92827a1affa945c91700e",
+      "bytes": 389,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/triangle-alert.svg": {
       "sha256": "4866f38b8560d410f21e3226413e0b77997b6dfbb6931fadfe0a0d5aef9ffeb4",
       "bytes": 345,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/undo-2.svg": {
+      "sha256": "efad2edbbd2be6038cc23fd64df2d012fad5cc6460dfbf227cfa3d990e9e897f",
+      "bytes": 309,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/upload.svg": {
+      "sha256": "42816ee1fa0e9d3b82272a97615c1e562b0e9de64780ebf21963bc1db0ceffd1",
+      "bytes": 318,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/user.svg": {
+      "sha256": "eae3b3b2400031ddd5ec869327d127a96014e5f63aa6e06658dd5d4e90661aa8",
+      "bytes": 299,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/users.svg": {
@@ -305,9 +505,24 @@
       "bytes": 383,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/wallet.svg": {
+      "sha256": "76c9596f629a2abf9cfabb573452f3113ed7e9502c699aa811e630f156eb7556",
+      "bytes": 387,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/wifi-off.svg": {
+      "sha256": "318b290106e55c3505933f434d3663524206c7a44165a89508774fba4fdbaadd",
+      "bytes": 494,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/x.svg": {
       "sha256": "4a9cdab38fbb96162e7dace28e33f4ca0e49d8963a6162abc3d4691b7d675117",
       "bytes": 260,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/zap.svg": {
+      "sha256": "4c395891eab4d1e5627c5d414a16db037317cb2f12453de0f3a1130964c6d444",
+      "bytes": 390,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "tokens/tokens.json": {
