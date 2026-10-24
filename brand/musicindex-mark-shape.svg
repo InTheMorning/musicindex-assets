@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="132 160 735 681" fill="currentColor">
+  <!-- The Music Index mark, cropped to its box (aspect 735 / 681), in the current color.
+       ADR 0021 R-ART-2 uses this shape as the placeholder of missing art. -->
+  <path d="M 132 274 L 177 274 L 249 304 L 249 841 L 132 841 Z"/>
+  <path d="M 339 160 L 489 160 L 657 280 L 657 841 L 546 841 L 546 388 L 456 331 L 456 841 L 339 841 Z"/>
+  <path d="M 867 250 L 867 790 L 759 841 L 750 841 L 750 304 L 858 250 Z"/>
+</svg>

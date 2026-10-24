@@ -1,0 +1,18 @@
+Copyright (c) 2026 HeyCitizen. All rights reserved.
+
+This license covers each file in this repository, except the two folders
+below. You can read the files in this public repository. You cannot use,
+copy, change or distribute them without written permission of the copyright
+holder.
+
+The Music Index apps (musicindex.org, musicindex-studio and v4vmm) have this
+permission. A fork of an app does not get it.
+
+Files with their own license:
+
+- fonts/figtree/: the Figtree font, under the SIL Open Font License 1.1.
+  See fonts/figtree/OFL.txt.
+- icons/lucide/: the Lucide icons, under the ISC License, and the MIT License
+  for the icons that come from Feather. See icons/lucide/LICENSE-LUCIDE. A
+  change that the copyright holder makes to a Lucide icon is under this
+  license, and the Lucide notice stays with the icon.

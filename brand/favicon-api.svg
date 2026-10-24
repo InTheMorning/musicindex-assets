@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dcdce2"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x=".5" y=".5" width="63" height="63" rx="14" fill="url(#tile)" stroke="#000000" stroke-opacity=".14"/>
+  <rect x="1" y="1" width="62" height="31" rx="13" fill="url(#gloss)"/>
+  <g fill="none" stroke="#1d1d1f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 22L6.5 32L12.5 42"/>
+    <path d="M51.5 22L57.5 32L51.5 42"/>
+  </g>
+  <g transform="translate(18.05 19.05) scale(.038) translate(-132 -160)" fill="#1d1d1f">
+    <path d="M132 274L177 274L249 304L249 841L132 841Z"/>
+    <path d="M339 160L489 160L657 280L657 841L546 841L546 388L456 331L456 841L339 841Z"/>
+    <path d="M867 250L867 790L759 841L750 841L750 304L858 250Z"/>
+  </g>
+</svg>
