@@ -6,6 +6,8 @@ Usage:
   check.py verify             Exit with 1 when a file differs from manifest.json.
   check.py compare DIR...     For each file in DIR that has the name of an asset,
                               exit with 1 when its bytes differ from the asset.
+  check.py css FILE...        Exit with 1 when the CSS tokens of FILE differ from
+                              tokens/tokens.json (musicindex ADR 0032 R-DOT-2).
 
 An app keeps copies of the assets. Run `compare` on the folder of the copies,
 for example `check.py compare ../musicindex-studio/crates/api/ui/assets`.
@@ -13,6 +15,7 @@ for example `check.py compare ../musicindex-studio/crates/api/ui/assets`.
 import hashlib
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -50,6 +53,34 @@ def scan():
     return dict(sorted(files.items()))
 
 
+def css_values(text, name):
+    return {v.strip().lower() for v in re.findall(r"(?<![\w-])" + re.escape(name) + r"\s*:\s*([^;}]+)", text)}
+
+
+def check_css(paths):
+    tokens = json.load(open(os.path.join(ROOT, "tokens", "tokens.json"), encoding="utf-8"))
+    dot = tokens["shape"]["type-dot"]
+    want = {f"--c-{kind}": {tokens["entity"]["dark"][kind].lower(), tokens["entity"]["light"][kind].lower()}
+            for kind in tokens["entity"]["dark"]}
+    want["--dot-size"] = {f"{dot['size-px']}px"}
+    want["--dot-ring"] = {f"{dot['hollow-ring-px']}px"}
+    bad = 0
+    for path in paths:
+        text = open(path, encoding="utf-8").read()
+        before = bad
+        for name, values in want.items():
+            got = css_values(text, name)
+            if got != values:
+                bad += 1
+                print(f"differs: {path} gives {name} as {sorted(got) or 'nothing'}, tokens.json gives {sorted(values)}")
+        if bad == before:
+            print(f"same: {path} has the entity colors and the type dot of tokens.json")
+    if bad:
+        print("musicindex ADR 0032 R-DOT-2: an app keeps the entity colors and the type dot of tokens.json.")
+        print("Change the CSS token to the tokens.json value, or change tokens.json through a musicindex decision record.")
+        sys.exit(1)
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__)
@@ -60,6 +91,9 @@ def main():
             json.dump({"files": scan()}, f, indent=2)
             f.write("\n")
         print(f"manifest.json: {len(scan())} files")
+        return
+    if cmd == "css":
+        check_css(sys.argv[2:])
         return
     manifest = json.load(open(MANIFEST, encoding="utf-8"))["files"]
     if cmd == "verify":

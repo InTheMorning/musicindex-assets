@@ -36,6 +36,13 @@ python3 scripts/check.py compare ../musicindex-studio/crates/api/ui/assets
 `compare` finds each file in the given folder that has the name of an asset.
 It exits with 1 when the bytes are different.
 
+`css` compares the entity colors and the type dot of a CSS file or an HTML
+file with `tokens/tokens.json` (musicindex ADR 0032):
+
+```sh
+python3 scripts/check.py css ../musicindex/search.html
+```
+
 ## Previews
 
 GitHub shows an SVG file at the size that the file states, and it draws

@@ -20,8 +20,10 @@ no rule of its own.
 - v4vmm also holds `src/assets/music_network_logo_vectorized.svg`. It has the
   bytes of `brand/musicindex-lockup-primary.svg` and another name, so
   `scripts/check.py compare` does not find it.
-- The apps do not take their files from here yet. Each app changes when the
-  operator starts that work in the app.
+- Studio and v4vmm keep a copy of `tokens/tokens.json`. A test in each app
+  compares the app's type dot and entity colors with its copy. musicindex.org
+  runs `scripts/check.py css` before each deploy (musicindex ADR 0032
+  R-DOT-2). For the other files, the apps keep their earlier copies.
 - On 2026-10-24, 43 Lucide icons were added for the mockups of the research
   repository. The mockups show the screens of the journeys, for example
   settings, folders, upload, the inbox and the trash. The apps do not use
