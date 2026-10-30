@@ -340,6 +340,11 @@
       "bytes": 251,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/lock-open.svg": {
+      "sha256": "f167153e8fec4008d6946f28035607636ed0b04dcfecdf58d7204db0b3d030f2",
+      "bytes": 308,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/lock.svg": {
       "sha256": "d2cfe60cac8deaef36442b5c8218c1e61abe18222784b2a370ea090d13fca840",
       "bytes": 309,
