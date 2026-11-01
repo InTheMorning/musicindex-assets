@@ -7,7 +7,8 @@ Usage:
   check.py compare DIR...     For each file in DIR that has the name of an asset,
                               exit with 1 when its bytes differ from the asset.
   check.py css FILE...        Exit with 1 when the CSS tokens of FILE differ from
-                              tokens/tokens.json (musicindex ADR 0032 R-DOT-2).
+                              tokens/tokens.json (musicindex ADR 0032 R-DOT-2 and
+                              ADR 0029 R-SCALE-1), or when FILE has a free text size.
 
 An app keeps copies of the assets. Run `compare` on the folder of the copies,
 for example `check.py compare ../musicindex-studio/crates/api/ui/assets`.
@@ -57,6 +58,21 @@ def css_values(text, name):
     return {v.strip().lower() for v in re.findall(r"(?<![\w-])" + re.escape(name) + r"\s*:\s*([^;}]+)", text)}
 
 
+# A text size that is not a free size: a text token, a size relative to the
+# text around it, or a display title of musicindex ADR 0029 R-SCALE-2 item 2.
+ALLOWED_SIZE = re.compile(r"^(var\(--text-[a-z0-9-]+\)|[0-9.]+em|inherit|clamp\(.*\))$")
+
+
+def free_sizes(text):
+    text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+    found = []
+    for match in re.finditer(r"(?<![\w-])font-size\s*:\s*([^;}]+)", text):
+        value = match.group(1).strip()
+        if not ALLOWED_SIZE.match(value):
+            found.append((text.count("\n", 0, match.start()) + 1, value))
+    return found
+
+
 def check_css(paths):
     tokens = json.load(open(os.path.join(ROOT, "tokens", "tokens.json"), encoding="utf-8"))
     dot = tokens["shape"]["type-dot"]
@@ -64,6 +80,8 @@ def check_css(paths):
             for kind in tokens["entity"]["dark"]}
     want["--dot-size"] = {f"{dot['size-px']}px"}
     want["--dot-ring"] = {f"{dot['hollow-ring-px']}px"}
+    for style, (size, _, _) in tokens["type"]["web"].items():
+        want[f"--text-{style}"] = {f"{size}px", f"{tokens['type']['touch'][style][0]}px"}
     bad = 0
     for path in paths:
         text = open(path, encoding="utf-8").read()
@@ -73,10 +91,15 @@ def check_css(paths):
             if got != values:
                 bad += 1
                 print(f"differs: {path} gives {name} as {sorted(got) or 'nothing'}, tokens.json gives {sorted(values)}")
+        for line, value in free_sizes(text):
+            bad += 1
+            print(f"free size: {path}:{line} gives font-size: {value}")
         if bad == before:
-            print(f"same: {path} has the entity colors and the type dot of tokens.json")
+            print(f"same: {path} has the entity colors, the type dot and the text styles of tokens.json")
     if bad:
         print("musicindex ADR 0032 R-DOT-2: an app keeps the entity colors and the type dot of tokens.json.")
+        print("musicindex ADR 0029 R-SCALE-1: each text size is a text style. Use var(--text-<style>), with the")
+        print("type.web size by default and the type.touch size in @media (pointer: coarse).")
         print("Change the CSS token to the tokens.json value, or change tokens.json through a musicindex decision record.")
         sys.exit(1)
 

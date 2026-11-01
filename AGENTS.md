@@ -23,7 +23,12 @@ no rule of its own.
 - Studio and v4vmm keep a copy of `tokens/tokens.json`. A test in each app
   compares the app's type dot and entity colors with its copy. musicindex.org
   runs `scripts/check.py css` before each deploy (musicindex ADR 0032
-  R-DOT-2). For the other files, the apps keep their earlier copies.
+  R-DOT-2).
+- `tokens.json` has three text tables: `type.desktop` (macOS), `type.web`
+  (musicindex ADR 0029 R-SCALE-2) and `type.touch` (iOS). `scripts/check.py
+  css` also compares the `--text-*` tokens of a page with `type.web` and
+  `type.touch`, and refuses a free `font-size`. Studio has the same check as a
+  Node test. For the other files, the apps keep their earlier copies.
 - On 2026-10-24, 43 Lucide icons were added for the mockups of the research
   repository. The mockups show the screens of the journeys, for example
   settings, folders, upload, the inbox and the trash. The apps do not use
