@@ -115,6 +115,11 @@
       "bytes": 3208,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
+    "icons/lucide/arrow-down-wide-narrow.svg": {
+      "sha256": "f3900e07a9662640da27932d925214e72080b751f0f02de25402479f166fd226",
+      "bytes": 331,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
     "icons/lucide/arrow-left.svg": {
       "sha256": "c5f4b88076108eb1a0d95336e1aa7e7bb1419a3a92af96f6247d88cd3456f933",
       "bytes": 262,
@@ -123,6 +128,11 @@
     "icons/lucide/arrow-up-down.svg": {
       "sha256": "d15411438095bac7cab0cf91f18cadfbde2ca752284c06b4b3642c4695b1774e",
       "bytes": 313,
+      "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
+    },
+    "icons/lucide/arrow-up-narrow-wide.svg": {
+      "sha256": "96118fd95305adb649d4a2b43f5c6a042195f58638ffa971b21bf05b61b7b046",
+      "bytes": 332,
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "icons/lucide/audio-lines.svg": {
