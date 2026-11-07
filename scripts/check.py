@@ -59,12 +59,13 @@ def css_values(text, name):
 
 
 # A text size that is not a free size: a text token, a size relative to the
-# text around it, or a display title of musicindex ADR 0029 R-SCALE-2 item 2.
-ALLOWED_SIZE = re.compile(r"^(var\(--text-[a-z0-9-]+\)|[0-9.]+em|inherit|clamp\(.*\))$")
+# text around it. A clamp() size is a free size (musicindex ADR 0046 R-GUARD-2).
+ALLOWED_SIZE = re.compile(r"^(var\(--text-[a-z0-9-]+\)|[0-9.]+em|inherit)$")
 
 
 def free_sizes(text):
-    text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+    # Keep the line breaks of a comment, so that each line number stays correct.
+    text = re.sub(r"/\*.*?\*/", lambda m: re.sub(r"[^\n]", " ", m.group(0)), text, flags=re.S)
     found = []
     for match in re.finditer(r"(?<![\w-])font-size\s*:\s*([^;}]+)", text):
         value = match.group(1).strip()
@@ -73,7 +74,8 @@ def free_sizes(text):
     return found
 
 
-def check_css(paths):
+def css_findings(path):
+    """Give (check, line, message) for each difference between the CSS of path and tokens.json."""
     tokens = json.load(open(os.path.join(ROOT, "tokens", "tokens.json"), encoding="utf-8"))
     dot = tokens["shape"]["type-dot"]
     want = {f"--c-{kind}": {tokens["entity"]["dark"][kind].lower(), tokens["entity"]["light"][kind].lower()}
@@ -82,19 +84,25 @@ def check_css(paths):
     want["--dot-ring"] = {f"{dot['hollow-ring-px']}px"}
     for style, (size, _, _) in tokens["type"]["web"].items():
         want[f"--text-{style}"] = {f"{size}px", f"{tokens['type']['touch'][style][0]}px"}
+    text = open(path, encoding="utf-8").read()
+    found = []
+    for name, values in want.items():
+        got = css_values(text, name)
+        if got != values:
+            found.append(("differs", 0, f"differs: {path} gives {name} as {sorted(got) or 'nothing'}, tokens.json gives {sorted(values)}"))
+    for line, value in free_sizes(text):
+        found.append(("free size", line, f"free size: {path}:{line} gives font-size: {value}"))
+    return found
+
+
+def check_css(paths):
     bad = 0
     for path in paths:
-        text = open(path, encoding="utf-8").read()
-        before = bad
-        for name, values in want.items():
-            got = css_values(text, name)
-            if got != values:
-                bad += 1
-                print(f"differs: {path} gives {name} as {sorted(got) or 'nothing'}, tokens.json gives {sorted(values)}")
-        for line, value in free_sizes(text):
-            bad += 1
-            print(f"free size: {path}:{line} gives font-size: {value}")
-        if bad == before:
+        found = css_findings(path)
+        for _, _, message in found:
+            print(message)
+        bad += len(found)
+        if not found:
             print(f"same: {path} has the entity colors, the type dot and the text styles of tokens.json")
     if bad:
         print("musicindex ADR 0032 R-DOT-2: an app keeps the entity colors and the type dot of tokens.json.")

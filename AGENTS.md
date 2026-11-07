@@ -22,8 +22,8 @@ no rule of its own.
   `scripts/check.py compare` does not find it.
 - Studio and v4vmm keep a copy of `tokens/tokens.json`. A test in each app
   compares the app's type dot and entity colors with its copy. musicindex.org
-  runs `scripts/check.py css` before each deploy (musicindex ADR 0032
-  R-DOT-2).
+  runs `css_findings` of `scripts/check.py` through its own guard before each commit
+  and deploy (musicindex ADR 0046).
 - `tokens.json` has three text tables: `type.desktop` (macOS), `type.web`
   (musicindex ADR 0029 R-SCALE-2) and `type.touch` (iOS). `scripts/check.py
   css` also compares the `--text-*` tokens of a page with `type.web` and
