@@ -541,8 +541,8 @@
       "license": "ISC, with MIT for the Feather-derived icons (icons/lucide/LICENSE-LUCIDE)"
     },
     "tokens/tokens.json": {
-      "sha256": "3194be05ae39fc6e5ebbea1ced3c3c2cdc0a60d6dad97178cfea69dc641f8491",
-      "bytes": 9183,
+      "sha256": "2b685be4f1bac65555f259e73f38af803aa3ca9b0c1fbb6a89441e94069c38bf",
+      "bytes": 9344,
       "license": "All rights reserved (LICENSE)"
     }
   }
