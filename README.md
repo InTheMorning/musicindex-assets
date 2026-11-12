@@ -1,7 +1,7 @@
 # musicindex-assets
 
 The shared assets of the Music Index apps: musicindex.org,
-musicindex-studio and v4vmm.
+musicindex-studio and HitIt.
 
 ![The Music Index lockup and the mark shape](previews/brand.svg)
 
@@ -10,7 +10,7 @@ musicindex-studio and v4vmm.
 | Folder | Contents | License |
 | --- | --- | --- |
 | `brand/` | The logo mark, the mark shape, the lockups, the favicons and the brand pack | All rights reserved (`LICENSE`) |
-| `fonts/figtree/` | Figtree: two `woff2` subsets for the web apps, four `ttf` weights for v4vmm | SIL Open Font License 1.1 (`fonts/figtree/OFL.txt`) |
+| `fonts/figtree/` | Figtree: two `woff2` subsets for the web apps, four `ttf` weights for HitIt | SIL Open Font License 1.1 (`fonts/figtree/OFL.txt`) |
 | `icons/lucide/` | 82 Lucide 1.43.0 icons that the apps use, without changes | ISC, and MIT for the icons from Feather (`icons/lucide/LICENSE-LUCIDE`) |
 | `icons/custom/` | Icons that Lucide does not have: the RSS and Nostr badges | All rights reserved (`LICENSE`) |
 | `tokens/tokens.json` | The colors, the shapes, the font and the icon set of the apps | All rights reserved (`LICENSE`) |

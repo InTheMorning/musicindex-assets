@@ -3,7 +3,7 @@
 ## What This Repository Is
 
 This repository holds the shared assets of musicindex.org, musicindex-studio
-and v4vmm. The assets are the brand files, the Figtree font, the Lucide icons
+and HitIt. The assets are the brand files, the Figtree font, the Lucide icons
 that the apps use, two custom icons, and the design tokens. It has no app
 code.
 
@@ -17,10 +17,10 @@ no rule of its own.
 - Created on 2026-10-24 from the copies in `../musicindex/assets`,
   `../musicindex-studio/crates/api/ui/assets` and `../v4vmm/src/assets`. The
   copies in the apps were identical to these files on that day.
-- v4vmm also holds `src/assets/music_network_logo_vectorized.svg`. It has the
+- HitIt also holds `src/assets/music_network_logo_vectorized.svg`. It has the
   bytes of `brand/musicindex-lockup-primary.svg` and another name, so
   `scripts/check.py compare` does not find it.
-- Studio and v4vmm keep a copy of `tokens/tokens.json`. A test in each app
+- Studio and HitIt keep a copy of `tokens/tokens.json`. A test in each app
   compares the app's type dot and entity colors with its copy. musicindex.org
   runs `css_findings` of `scripts/check.py` through its own guard before each commit
   and deploy (musicindex ADR 0046).
